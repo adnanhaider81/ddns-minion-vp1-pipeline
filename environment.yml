@@ -1,0 +1,15 @@
+name: ddns-minion-vp1-pipeline
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - pandas
+  - openpyxl
+  - beautifulsoup4
+  - matplotlib
+  - minimap2
+  - samtools
+  - cutadapt
+  - filtlong
+  - medaka

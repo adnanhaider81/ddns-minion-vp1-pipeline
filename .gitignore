@@ -1,0 +1,45 @@
+# Local inputs
+fastq_pass/
+barcode*/
+barcodes*.csv
+*barcode_map*.csv
+!examples/barcodes.csv
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+
+# Pipeline outputs and intermediates
+out/
+output/
+results/
+run_out*/
+00_logs/
+01_merge/
+02_trim/
+03_filter/
+04_screen/
+05_benchmark/
+06_consensus/
+per_sample/
+ref_cache/
+*.bam
+*.bai
+*.mmi
+*.fai
+*.zip
+report.html
+
+# Local run reports
+*run_report*.html
+sequencing_summary*.txt
+
+# Environment and editor state
+.RData
+.Rhistory
+.Rproj.user/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.pytest_cache/

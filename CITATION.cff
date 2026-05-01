@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this pipeline, please cite it using the metadata below."
+title: "ddns-minion-vp1-pipeline"
+version: "1.0.0"
+date-released: "2026-05-02"
+authors:
+  - family-names: "Haider"
+    given-names: "Syed Adnan"
+repository-code: "https://github.com/adnanhaider81/ddns-minion-vp1-pipeline"
+license: "MIT"
+keywords:
+  - MinION
+  - ONT
+  - poliovirus
+  - VP1
+  - stool culture
+  - genomic surveillance
