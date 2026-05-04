@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.1 - 2026-05-04
+
+- Added Python validation requirements for lightweight smoke checks.
+- Strengthened CI to import report dependencies and exercise command help paths.
+- Added checksum validation for bundled reference and primer resources.
+
 ## v1.0.0 - 2026-05-02
 
 - Initial public release of the DDNS MinION VP1 stool-culture pipeline.

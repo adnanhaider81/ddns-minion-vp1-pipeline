@@ -35,6 +35,13 @@ filtlong --version
 medaka --version
 ```
 
+For lightweight validation without the full conda environment:
+
+```bash
+python3 -m pip install -r requirements.txt
+make validate
+```
+
 ## Input Layout
 
 The pipeline expects a MinKNOW-style `fastq_pass` directory containing barcode folders:
@@ -108,9 +115,12 @@ Large intermediates are kept inside the output directory and should not be commi
 These checks do not require MinION FASTQ data:
 
 ```bash
+python3 -m pip install -r requirements.txt
 bash -n bin/ont_amplicon_vp1_by_folder.sh
 bash -n bin/vp1_pipeline_internal.sh
 python3 -m py_compile bin/report_tables.py bin/report_html.py
+python3 bin/report_tables.py --help >/dev/null
+python3 bin/report_html.py --help >/dev/null
 python3 tests/validate_resources.py
 ```
 
@@ -125,4 +135,4 @@ This repository is intended for code, fixed reference resources, and documentati
 
 ## Version
 
-Current release: `v1.0.0`.
+Current release: `v1.0.1`.

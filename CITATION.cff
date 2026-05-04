@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this pipeline, please cite it using the metadata below."
 title: "ddns-minion-vp1-pipeline"
-version: "1.0.0"
-date-released: "2026-05-02"
+version: "1.0.1"
+date-released: "2026-05-04"
 authors:
   - family-names: "Haider"
     given-names: "Syed Adnan"

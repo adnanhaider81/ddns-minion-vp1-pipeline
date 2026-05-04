@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import hashlib
 import re
 import sys
 
@@ -7,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REF_FASTA = ROOT / "references" / "references.all.unique.fasta"
 PRIMERS_XLSX = ROOT / "resources" / "BarcodedPrimers.xlsx"
 BARCODES_CSV = ROOT / "examples" / "barcodes.csv"
+CHECKSUMS = ROOT / "resources" / "checksums.sha256"
 
 
 def fail(message: str) -> None:
@@ -110,10 +112,35 @@ def validate_examples() -> None:
     print("Example barcode map OK")
 
 
+def validate_checksums() -> None:
+    if not CHECKSUMS.exists():
+        fail(f"Missing checksums file: {CHECKSUMS}")
+    checked = 0
+    for line_no, line in enumerate(CHECKSUMS.read_text(encoding="utf-8").splitlines(), start=1):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split()
+        if len(parts) != 2:
+            fail(f"Invalid checksum line {line_no}: {line}")
+        expected, rel_path = parts
+        path = ROOT / rel_path
+        if not path.exists():
+            fail(f"Checksum target is missing: {rel_path}")
+        observed = hashlib.sha256(path.read_bytes()).hexdigest()
+        if observed.lower() != expected.lower():
+            fail(f"Checksum mismatch for {rel_path}")
+        checked += 1
+    if checked == 0:
+        fail("No checksums were validated")
+    print(f"Checksums OK: {checked} files")
+
+
 def main() -> int:
     validate_fasta()
     validate_primers()
     validate_examples()
+    validate_checksums()
     return 0
 
 
