@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this pipeline, please cite it using the metadata below."
 title: "ddns-minion-vp1-pipeline"
-version: "1.0.2"
+version: "1.0.3"
 date-released: "2026-05-17"
 type: software
 abstract: "A standalone ONT MinION VP1 analysis pipeline for DDNS stool-culture amplicon sequencing, including VP1 reference screening, candidate ranking, consensus attempts, and tabular plus HTML reporting for public-health genomic surveillance review."
@@ -9,7 +9,6 @@ authors:
   - family-names: "Haider"
     given-names: "Syed Adnan"
 repository-code: "https://github.com/adnanhaider81/ddns-minion-vp1-pipeline"
-doi: "10.5281/zenodo.20257054"
 license: "MIT"
 keywords:
   - MinION

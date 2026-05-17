@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.3 - 2026-05-17
+
+- Added GitHub Actions status badge to the README.
+- Added Docker container recipe and Docker build context exclusions.
+
 ## v1.0.2 - 2026-05-17
 
 - Prepared citation metadata for Zenodo archival.
