@@ -32,7 +32,7 @@ flowchart LR
 | Documentation | `docs/` plus this README |
 | Output screenshot or report example | Planned after a safe synthetic run fixture is added |
 | Container recipe | `Dockerfile` |
-| Zenodo DOI | Pending Zenodo archive for `v1.0.3` |
+| Zenodo DOI | [10.5281/zenodo.20257879](https://doi.org/10.5281/zenodo.20257879) |
 
 ## Contents
 
@@ -171,6 +171,6 @@ Current release: `v1.0.3`.
 
 Please cite the archived Zenodo release when using this workflow:
 
-Haider, S. A. (2026). ddns-minion-vp1-pipeline (v1.0.3). Zenodo release DOI pending.
+Haider, S. A. (2026). ddns-minion-vp1-pipeline (v1.0.3). Zenodo. https://doi.org/10.5281/zenodo.20257879
 
 The all-version Zenodo concept DOI is https://doi.org/10.5281/zenodo.20257053.
