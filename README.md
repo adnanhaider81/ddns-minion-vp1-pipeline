@@ -4,6 +4,33 @@ Standalone ONT MinION VP1 analysis pipeline for DDNS stool-culture amplicon sequ
 
 The pipeline benchmarks each barcode folder against a bundled enterovirus/poliovirus VP1 reference panel, generates shortlisted reference hits, attempts consensus calling for selected candidates, and writes tabular plus HTML reports for run review.
 
+## Portfolio quick view
+
+This repository is intended to show a complete DDNS review path: ONT barcode folders -> VP1 screening -> shortlisted reference evidence -> consensus attempt -> HTML and tabular reporting. It is useful for supervisors, collaborators, and hiring teams who want to see how sequencing evidence is converted into an auditable public-health report without exposing restricted run data.
+
+```mermaid
+flowchart LR
+  A["Barcode FASTQ folders"] --> B["Read filtering"]
+  B --> C["VP1 reference screening"]
+  C --> D["Candidate reference ranking"]
+  D --> E["Consensus attempt"]
+  E --> F["QC tables"]
+  F --> G["HTML report"]
+```
+
+## Public repository checklist
+
+| Item | Status |
+| --- | --- |
+| README, license, citation metadata | Present |
+| Reproducible environment | `environment.yml` and `requirements.txt` |
+| Tests or smoke checks | `tests/validate_resources.py` plus script syntax checks |
+| Example or synthetic data | Barcode-map template and bundled non-private references |
+| Documentation | `docs/` plus this README |
+| Output screenshot or report example | Planned after a safe synthetic run fixture is added |
+| Container recipe | Planned |
+| Zenodo DOI | Planned for a stable archived release |
+
 ## Contents
 
 - `bin/ont_amplicon_vp1_by_folder.sh` - user-facing wrapper.
