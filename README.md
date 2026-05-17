@@ -1,5 +1,7 @@
 # ddns-minion-vp1-pipeline
 
+[![DOI](https://zenodo.org/badge/1226769149.svg)](https://zenodo.org/badge/latestdoi/1226769149)
+
 Standalone ONT MinION VP1 analysis pipeline for DDNS stool-culture amplicon sequencing.
 
 The pipeline benchmarks each barcode folder against a bundled enterovirus/poliovirus VP1 reference panel, generates shortlisted reference hits, attempts consensus calling for selected candidates, and writes tabular plus HTML reports for run review.
@@ -29,7 +31,7 @@ flowchart LR
 | Documentation | `docs/` plus this README |
 | Output screenshot or report example | Planned after a safe synthetic run fixture is added |
 | Container recipe | Planned |
-| Zenodo DOI | Pending Zenodo archive for `v1.0.2` |
+| Zenodo DOI | [10.5281/zenodo.20257054](https://doi.org/10.5281/zenodo.20257054) |
 
 ## Contents
 
@@ -163,3 +165,11 @@ This repository is intended for code, fixed reference resources, and documentati
 ## Version
 
 Current release: `v1.0.2`.
+
+## Citation
+
+Please cite the archived Zenodo release when using this workflow:
+
+Haider, S. A. (2026). ddns-minion-vp1-pipeline (v1.0.2). Zenodo. https://doi.org/10.5281/zenodo.20257054
+
+The all-version Zenodo concept DOI is https://doi.org/10.5281/zenodo.20257053.

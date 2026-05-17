@@ -9,6 +9,7 @@ authors:
   - family-names: "Haider"
     given-names: "Syed Adnan"
 repository-code: "https://github.com/adnanhaider81/ddns-minion-vp1-pipeline"
+doi: "10.5281/zenodo.20257054"
 license: "MIT"
 keywords:
   - MinION
