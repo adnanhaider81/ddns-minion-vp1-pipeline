@@ -1,6 +1,7 @@
 # ddns-minion-vp1-pipeline
 
 [![DOI](https://zenodo.org/badge/1226769149.svg)](https://zenodo.org/badge/latestdoi/1226769149)
+[![Smoke test](https://github.com/adnanhaider81/ddns-minion-vp1-pipeline/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/adnanhaider81/ddns-minion-vp1-pipeline/actions/workflows/smoke-test.yml)
 
 Standalone ONT MinION VP1 analysis pipeline for DDNS stool-culture amplicon sequencing.
 
@@ -30,7 +31,7 @@ flowchart LR
 | Example or synthetic data | Barcode-map template and bundled non-private references |
 | Documentation | `docs/` plus this README |
 | Output screenshot or report example | Planned after a safe synthetic run fixture is added |
-| Container recipe | Planned |
+| Container recipe | `Dockerfile` |
 | Zenodo DOI | [10.5281/zenodo.20257054](https://doi.org/10.5281/zenodo.20257054) |
 
 ## Contents
