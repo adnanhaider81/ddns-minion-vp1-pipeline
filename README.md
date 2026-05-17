@@ -29,7 +29,7 @@ flowchart LR
 | Documentation | `docs/` plus this README |
 | Output screenshot or report example | Planned after a safe synthetic run fixture is added |
 | Container recipe | Planned |
-| Zenodo DOI | Planned for a stable archived release |
+| Zenodo DOI | Pending Zenodo archive for `v1.0.2` |
 
 ## Contents
 
@@ -162,4 +162,4 @@ This repository is intended for code, fixed reference resources, and documentati
 
 ## Version
 
-Current release: `v1.0.1`.
+Current release: `v1.0.2`.

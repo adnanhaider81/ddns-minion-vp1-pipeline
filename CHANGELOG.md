@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.2 - 2026-05-17
+
+- Prepared citation metadata for Zenodo archival.
+- Added the public portfolio README overview and workflow diagram.
+
 ## v1.0.1 - 2026-05-04
 
 - Added Python validation requirements for lightweight smoke checks.
