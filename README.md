@@ -158,6 +158,6 @@ Current release: `v1.0.3`.
 
 Please cite the archived Zenodo release when using this workflow:
 
-Haider, S. A. (2026). ddns-minion-vp1-pipeline (v1.0.3). Zenodo. https://doi.org/10.5281/zenodo.20257879
+Haider, S. A. (2026). DDNS MinION VP1 Analysis Pipeline (v1.0.3). Zenodo. https://doi.org/10.5281/zenodo.20257879
 
 The all-version Zenodo concept DOI is https://doi.org/10.5281/zenodo.20257053.
