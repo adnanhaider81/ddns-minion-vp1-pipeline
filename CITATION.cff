@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this pipeline, please cite it using the metadata below."
-title: "ddns-minion-vp1-pipeline"
+title: "DDNS MinION VP1 Analysis Pipeline"
 version: "1.0.3"
 date-released: "2026-05-17"
 type: software
