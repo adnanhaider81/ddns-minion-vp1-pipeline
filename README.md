@@ -154,6 +154,10 @@ This repository is intended for code, fixed reference resources, and documentati
 
 Current release: `v1.0.3`.
 
+## Data governance
+
+See [DATA_GOVERNANCE.md](DATA_GOVERNANCE.md) for public-data, restricted-data, and sample-identifier handling rules.
+
 ## Citation
 
 Please cite the archived Zenodo release when using this workflow:
