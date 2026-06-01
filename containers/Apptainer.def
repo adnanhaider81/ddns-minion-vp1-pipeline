@@ -1,0 +1,19 @@
+Bootstrap: docker
+From: mambaorg/micromamba:1.5.10
+
+%labels
+    Author Syed Adnan Haider
+    Description ddns minion vp1 pipeline runtime
+
+%files
+    environment.yml /tmp/environment.yml
+
+%post
+    micromamba install -y -n base -f /tmp/environment.yml
+    micromamba clean --all --yes
+
+%environment
+    export PATH="/opt/conda/bin:$PATH"
+
+%runscript
+    exec "$@"
