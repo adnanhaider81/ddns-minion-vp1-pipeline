@@ -156,7 +156,7 @@ Current release: `v1.0.3`.
 
 ## Apptainer/Singularity container
 
-An HPC-friendly container recipe is provided at `containers/Apptainer.def`. Build it from the repository root:
+HPC-friendly Apptainer/Singularity support is available at `containers/Apptainer.def`. Build it from the repository root:
 
 ```bash
 apptainer build containers/ddns-minion-vp1-pipeline.sif containers/Apptainer.def
