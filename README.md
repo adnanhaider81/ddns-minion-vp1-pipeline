@@ -7,6 +7,20 @@ Standalone ONT MinION VP1 analysis pipeline for DDNS stool-culture amplicon sequ
 
 The pipeline benchmarks each barcode folder against a bundled enterovirus/poliovirus VP1 reference panel, generates shortlisted reference hits, attempts consensus calling for selected candidates, and writes tabular plus HTML reports for run review.
 
+## Abbreviations
+
+| Term | Meaning |
+| --- | --- |
+| DDNS | Direct Detection by Nanopore Sequencing for Poliovirus Surveillance |
+| ONT | Oxford Nanopore Technologies |
+| MinION | Portable nanopore sequencing device from Oxford Nanopore Technologies |
+| VP1 | Viral protein 1, the main poliovirus typing region used here |
+| FASTQ | Sequencing-read file format with base calls and quality scores |
+| QC | Quality control |
+| CSV | Comma-separated values table |
+| HTML | Web-page report format |
+| SHA-256 | Cryptographic checksum used to verify bundled resources |
+
 ## Workflow overview
 
 This repository is intended to show a complete DDNS review path: ONT barcode folders -> VP1 screening -> shortlisted reference evidence -> consensus attempt -> HTML and tabular reporting. It is useful for supervisors, collaborators, and hiring teams who want to see how sequencing evidence is converted into an auditable public-health report without exposing restricted run data.
