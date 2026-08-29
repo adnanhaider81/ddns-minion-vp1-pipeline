@@ -1,9 +1,9 @@
-# DDNS MinION VP1 Analysis Pipeline
+# Direct-Detection Nanopore Sequencing (DDNS) Pipeline for Poliovirus VP1
 
 [![DOI](https://zenodo.org/badge/1226769149.svg)](https://zenodo.org/badge/latestdoi/1226769149)
 [![Smoke test](https://github.com/adnanhaider81/ddns-minion-vp1-pipeline/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/adnanhaider81/ddns-minion-vp1-pipeline/actions/workflows/smoke-test.yml)
 
-Standalone ONT MinION VP1 analysis pipeline for DDNS stool-culture amplicon sequencing.
+Standalone Oxford Nanopore MinION VP1 analysis and reporting pipeline for direct-detection poliovirus surveillance.
 
 The pipeline benchmarks each barcode folder against a bundled enterovirus/poliovirus VP1 reference panel, generates shortlisted reference hits, attempts consensus calling for selected candidates, and writes tabular plus HTML reports for run review.
 
